@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '/public/assets/logo.png'
 import { FaTwitter, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { Link } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -18,18 +19,18 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-end space-x-4 mt-4 md:mt-0">
-            <a href="/" target="Linkedin" className="hover:text-blue-500 transition duration-300">
+            <Link href="/" target="Linkedin" className="hover:text-blue-500 transition duration-300">
               <FaLinkedin size={25} />
-            </a>
-            <a href="/" target="Github" className="hover:text-gray-400 transition duration-300">
+            </Link>
+            <Link href="/" target="Github" className="hover:text-gray-400 transition duration-300">
               <FaGithub size={25} />
-            </a>
-            <a href="/" target="Facebook" className="hover:text-blue-600 transition duration-300">
+            </Link>
+            <Link href="/" target="Facebook" className="hover:text-blue-600 transition duration-300">
               <FaFacebookF size={25} />
-            </a>
-            <a href="/" target="_blank" className="hover:text-blue-400 transition duration-300">
+            </Link>
+            <Link href="/" target="_blank" className="hover:text-blue-400 transition duration-300">
               <FaTwitter size={25} />
-            </a>
+            </Link>
           </div>
         </div>
       </footer>
