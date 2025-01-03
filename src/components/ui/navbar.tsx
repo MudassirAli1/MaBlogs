@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from '/public/assets/Logo.png'
+import Logo from '/public/assets/logo.png'
 import Image from 'next/image'
 import { ModeToggle } from './components/themebtn'
 

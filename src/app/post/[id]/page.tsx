@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from 'next/image'
-import Link from 'next/link'
 import Ai from '/public/assets/ai.jpg'
 import Neuralink from '/public/assets/neurallink.jpg'
 import Starlink from '/public/assets/starlink.jpg'
