@@ -63,15 +63,15 @@ const CommentSection = () => {
       <div className="mt-6">
     
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold text-gray-950">Shayan Ali</p>
+          <p className="font-semibold text-gray-950">Ibad Javed</p>
           <p className="text-gray-700">This is a great blog post!</p>
         </div>
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold text-gray-950">Roshan Siddiqui</p>
+          <p className="font-semibold text-gray-950">Abdullah Baber</p>
           <p className="text-gray-700">I learned a lot from this article. Thank you!</p>
         </div>
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold text-gray-950">Fatima Khan</p>
+          <p className="font-semibold text-gray-950">Ali Hassan</p>
           <p className="text-gray-700">Looking forward to more posts like this!</p>
         </div>
       </div>
