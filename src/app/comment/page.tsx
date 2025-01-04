@@ -52,7 +52,7 @@ const CommentSection = () => {
         ) : (
           comments.map((comment, index) => (
             <div key={index} className="border-b border-gray-950 py-4">
-              <p className="font-semibold">{comment.name}</p>
+              <p className="font-semibold text-gray-950">{comment.name}</p>
               <p className="text-gray-700">{comment.comment}</p>
             </div>
           ))

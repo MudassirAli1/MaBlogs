@@ -94,12 +94,12 @@ export default async function post ({params}:{params:Promise<{id:string}>}){
       ));
     };
     return (
-      <div className="mx-auto my-10 px-5 max-w-3xl bg-white shadow-lg shadow-black rounded-lg overflow-hidden">
+      <div className="mx-auto my-10 px-5 max-w-3xl bg-white shadow-lg shadow-black rounded-2xl overflow-hidden">
   {post.img && (
     <Image 
       src={post.img}
       alt={post.title}
-      className="w-full h-auto object-cover"
+      className="w-full h-auto object-cover my-8"
     />
   )}
   <h1 className="font-bold text-4xl text-center text-gray-800 mt-4">{post.title}</h1>
