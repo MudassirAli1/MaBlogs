@@ -11,6 +11,8 @@ import Autopilot from '/public/assets/Autopilot.jpg'
 import Print from '/public/assets/3dprint.jpg'
 import Agent from '/public/assets/Agentai.jpg'
 import Metaverse from '/public/assets/metaverse.jpg'
+import { Button } from "@/components/ui/button"
+
 
 
 const blog = () => {
@@ -49,7 +51,7 @@ const blog = () => {
       id: 6,
       src: Robot,
       title: "Optimus Robot",
-      description: "Optimus Robot blog breaks down the latest advancements in robotics. We discuss how the Optimus robot functions, its features, and its impact on various industries."
+      description: "Optimus  blog breaks down the latest advancements in robotics. We discuss how the Optimus robot functions, its features, and its impact on various industries."
     },
     {
       id: 7,
@@ -103,8 +105,7 @@ const blog = () => {
 
                         <div className='flex justify-center items-center'><Link href={`/post/${blog.id}`} >
                           
-                          <button className='px-4 py-4 mx-50% bg-gray-200 inline-flex items-center justify-center mt-3 rounded-xl hover:bg-gray-300'>
-                             Read More</button>
+                        <Button variant="outline" className='my-4'>Read More</Button>
                         </Link></div>
                         
                       </div>

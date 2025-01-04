@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '/public/assets/logo.png'
 import { FaTwitter, FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa6";
-import { Link } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (

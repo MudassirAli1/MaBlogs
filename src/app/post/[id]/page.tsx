@@ -76,8 +76,8 @@ const blogsData = [
       description: "The Metaverse is an immersive, interconnected virtual world where users can interact with each other and digital environments in real-time. Powered by technologies like virtual reality (VR), augmented reality (AR), and blockchain, the Metaverse offers limitless possibilities for socializing, gaming, shopping, education, and business. In this digital universe, users can create avatars, attend virtual events, explore expansive digital landscapes, and even own virtual property. The Metaverse is transforming how we interact with the internet by blending physical and virtual spaces, allowing for more immersive and dynamic experiences. It promises to redefine the concept of work and leisure, offering new opportunities for remote collaboration, entertainment, and commerce. Major companies, from tech giants to startups, are already investing heavily in the Metaverse, seeing it as the next frontier of digital innovation. As it continues to evolve, the Metaverse could change how we communicate, work, and live, creating a new virtual economy and changing the fabric of social interaction. While still in its early stages, the Metaverse is shaping the future of digital life, with a vast potential to reshape various industries."
     },
      ]
-export default function post ({params}:{params:{id:string}}){
-   const {id} = params;
+export default async function post ({params}:{params:Promise<{id:string}>}){
+   const {id} = await params;
    const post = blogsData.find((b) => b.id === id);
 
    if (!post){

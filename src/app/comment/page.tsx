@@ -1,5 +1,7 @@
 "use client"
 import { useState } from 'react';
+import { Button } from "@/components/ui/button"
+
 
 const CommentSection = () => {
   const [comments, setComments] = useState<{ name: string; comment: string }[]>([]);
@@ -40,12 +42,7 @@ const CommentSection = () => {
           />
         </div>
         <div className='flex justify-center '>
-            <button
-          type="submit"
-          className="px-10 py-6 mx-50% bg-gray-200 inline-flex items-center justify-center mt-3 rounded-xl hover:bg-gray-300 transition duration-200"
-        >
-          Submit
-        </button></div>
+        <Button variant="outline" className='px-8'>Submit</Button></div>
         
       </form>
 
@@ -54,7 +51,7 @@ const CommentSection = () => {
           <p className="text-gray-500">No comments yet.</p>
         ) : (
           comments.map((comment, index) => (
-            <div key={index} className="border-b border-gray-200 py-4">
+            <div key={index} className="border-b border-gray-950 py-4">
               <p className="font-semibold">{comment.name}</p>
               <p className="text-gray-700">{comment.comment}</p>
             </div>
@@ -66,15 +63,15 @@ const CommentSection = () => {
       <div className="mt-6">
     
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold">Shayan Ali</p>
+          <p className="font-semibold text-gray-950">Shayan Ali</p>
           <p className="text-gray-700">This is a great blog post!</p>
         </div>
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold">Roshan Siddiqui</p>
+          <p className="font-semibold text-gray-950">Roshan Siddiqui</p>
           <p className="text-gray-700">I learned a lot from this article. Thank you!</p>
         </div>
         <div className="border-b border-gray-200 py-4">
-          <p className="font-semibold">Fatima Khan</p>
+          <p className="font-semibold text-gray-950">Fatima Khan</p>
           <p className="text-gray-700">Looking forward to more posts like this!</p>
         </div>
       </div>
